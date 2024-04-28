@@ -1,0 +1,37 @@
+                  HTML Part:
+Bootstrap Integration: It integrates Bootstrap CSS and JavaScript for styling.
+Search Interface:
+It has a search input field where users can type their search queries.
+When the user presses enter, it triggers the search function.
+
+                  CSS Part:
+Styling: It styles various elements of the page.
+
+                  JavaScript Part:
+Variable Declarations:
+searchInputEl: Represents the search input field.
+searchResultsEl: Represents the element where search results will be displayed.
+spinnerEl: Represents the spinner element which appears while fetching the search results.
+createAndAppendSearchResult(result):
+It's a function that takes a result object and creates a DOM structure to display that result.
+It creates an anchor tag for the title, URL, and a paragraph for the description.
+Then, it appends these elements to the searchResultsEl.
+displayResults(searchResults):
+This function hides the spinner and displays the search results.
+It iterates over the search results array and calls createAndAppendSearchResult for each result.
+searchWikipedia(event):
+This function triggers the search when the user presses the Enter key.
+It shows the spinner, clears the search results, fetches the search results from an API using fetch, and then displays the results.
+Event Listener:
+It listens for the keydown event on the search input field and calls searchWikipedia function when the Enter key is pressed.
+
+                        API:
+It uses an API (https://apis.ccbp.in/wiki-search) to fetch search results based on the user's input.
+                       Explanation:
+When the user enters a search query and presses Enter, the JavaScript function searchWikipedia is called.
+This function displays a spinner, clears the previous search results, fetches new search results using an API, and then displays them on the page.
+
+
+#For Example 
+User can given Input value is India and Enter Now fetch method the api is call now api call the user input value related data will present on api data the data will display on it
+this output will show in output Page
